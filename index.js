@@ -6,6 +6,7 @@ client.once('ready', () => {
 });
 
 client.on('message', message => {
+    console.log(message.content);
     if(message.author.bot) return;
 
     message.channel.send(message.content);
